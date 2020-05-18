@@ -7,6 +7,20 @@ Board tiles coordinates are 0 based.
 
 The turtle can't move outside of the board. Trying to do that will end the processing of the moves.
 
+## Compilation instructions
+Run
+```
+dotnet restore
+dotnet build
+```
+in the repository folder.
+
+The binary will be in the 
+``` 
+./TurtleChallenge/bin/debug/netcoreapp3.1
+```
+folder.
+
 ## Settings file syntax
 Settings file must be a json file with the following structure:
 ```
@@ -53,7 +67,9 @@ Valid moves are:
 
 ## Running the program
 
-Call the program exe passing two arguments, the name of the settings file and the name of the moves file
+Call the program executable passing two arguments, the name of the settings file and the name of the moves file.
+
+The project includes a sample settings file and a sample moves file, named respectivle sampleSettings and sampleMoves
 
 ```
 TurtleChallenge.exe sampleSettings sampleMoves
