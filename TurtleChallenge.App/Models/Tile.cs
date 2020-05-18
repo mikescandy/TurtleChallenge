@@ -3,7 +3,7 @@ using System;
 
 namespace TurtleChallenge.App.Models
 {
-    public partial class Tile :  IEquatable<Tile>
+    public sealed partial class Tile : IEquatable<Tile>
     {
         public Tile()
         {

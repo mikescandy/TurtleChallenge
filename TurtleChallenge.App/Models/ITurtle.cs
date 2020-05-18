@@ -11,10 +11,6 @@ namespace TurtleChallenge.App.Models
 
         void MoveForward();
 
-        void MoveBack();
-
-        void RotateLeft();
-
         void RotateRight();
     }
 }

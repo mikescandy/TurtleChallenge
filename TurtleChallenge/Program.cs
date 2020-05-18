@@ -66,7 +66,7 @@ namespace TurtleChallenge
                 Console.WriteLine(ex.Message);
             }
 
-            if (!(settingsValidationResult?.IsValid == true))
+            if (settingsValidationResult?.IsValid != true)
             {
                 return;
             }
@@ -84,20 +84,14 @@ namespace TurtleChallenge
                 var logic = new Logic(settings, turtle);
                 var moves = line.Split(',');
 
-                foreach (var move in moves.Select(m => m.Trim().ToUpper()))
+                foreach (var move in moves.Select(m => m.Trim().ToLowerInvariant()))
                 {
                     switch (move)
                     {
-                        case "F":
+                        case "m":
                             turtle.MoveForward();
                             break;
-                        case "B":
-                            turtle.MoveBack();
-                            break;
-                        case "L":
-                            turtle.RotateLeft();
-                            break;
-                        case "R":
+                        case "r":
                             turtle.RotateRight();
                             break;
                         default:

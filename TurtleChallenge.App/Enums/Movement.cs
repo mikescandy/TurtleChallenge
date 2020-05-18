@@ -3,8 +3,6 @@
     public enum Movement
     {
         Forward,
-        Backward,
-        TurnLeft,
         TurnRight
-    }   
+    }
 }

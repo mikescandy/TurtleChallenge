@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Linq;
-using System.Net.Http.Headers;
 using TurtleChallenge.App.Enums;
 using TurtleChallenge.App.Models;
 
@@ -71,23 +68,6 @@ namespace TurtleChallenge.App
                             break;
                         case Direction.West:
                             _turtlePosition.X--;
-                            break;
-                    }
-                    break;
-                case Movement.Backward:
-                    switch (_turtle.Direction)
-                    {
-                        case Direction.North:
-                            _turtlePosition.Y--;
-                            break;
-                        case Direction.East:
-                            _turtlePosition.X--;
-                            break;
-                        case Direction.South:
-                            _turtlePosition.Y++;
-                            break;
-                        case Direction.West:
-                            _turtlePosition.X++;
                             break;
                     }
                     break;

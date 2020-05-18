@@ -44,8 +44,6 @@ namespace TurtleChallenge.Test
                                     { 'x':3, 'y':2},
                                      { 'x':1, 'y':4}
                                     ]
-
-
                               },
                                 'startTile':{'x':0,'y':0},
                                 'exitTile':{'x':6, 'y':5},
@@ -71,8 +69,6 @@ namespace TurtleChallenge.Test
                                     { 'x':3, 'y':2},
                                      { 'x':1, 'y':4}
                                     ]
-
-
                               },
                                 'startTile':{'x':0,'y':0},
                                 'exitTile':{'x':4, 'y':5},
@@ -96,8 +92,6 @@ namespace TurtleChallenge.Test
                                     { 'x':3, 'y':2},
                                      { 'x':1, 'y':4}
                                     ]
-
-
                               },
                                 'startTile':{'x':0,'y':0},
                                 'exitTile':{'x':4, 'y':5},

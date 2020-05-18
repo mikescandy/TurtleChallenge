@@ -19,17 +19,6 @@ namespace TurtleChallenge.App.Models
             TurtleMoved?.Invoke(this, new TurtleMovementArgs(Movement.Forward));
         }
 
-        public void MoveBack()
-        {
-            TurtleMoved?.Invoke(this, new TurtleMovementArgs(Movement.Backward));
-
-        }
-
-        public void RotateLeft()
-        {
-            Direction = (Direction)((((int)Direction) + 3) % 4);
-        }
-
         public void RotateRight()
         {
             Direction = (Direction)((((int)Direction) + 1) % 4);

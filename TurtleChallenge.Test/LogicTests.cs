@@ -39,7 +39,8 @@ namespace TurtleChallenge.Test
         public void TurtleMoveForwardOutOfBounds()
         {
             var initResult = Init();
-            initResult.Turtle.RotateLeft();
+            initResult.Turtle.RotateRight();
+            initResult.Turtle.RotateRight();
             initResult.Turtle.MoveForward();
             initResult.Turtle.MoveForward();
             Assert.Equal(Status.OutOfBounds, initResult.Logic.Status);

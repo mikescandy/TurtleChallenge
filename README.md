@@ -40,16 +40,15 @@ The program validates the consistencty of the data provided (ranges, tiles must 
 ## Moves file syntax
 Sequence of moves are defined as a sequence of comma separated actions. Each line defines a sequence of moves.
 ```
-B,B,R,F,F,F
-F,R,F,L,F,R,F,F,R,F,F,R,F,L,F,F,L,F
-F,R,F,F
+r,r,m,m,r,r,r,m,m,m
+m,r,m,r,r,r,m,r,m,m,r,m,m,r,m,r,r,r,m,m,r,r,r,m
+m,r,m,m
+r,r,r,m
 ```
 
 Valid moves are:
-- F: Move forward
-- B: Move backward
-- L: Turn left
-- R: Turn right
+- m : Move forward
+- r : Turn right
 
 ## Running the program
 
