@@ -78,6 +78,7 @@ namespace TurtleChallenge
 
         private void ProcessMoves(TurtleFactory turtleFactory, Settings settings, string[] movesText)
         {
+            var sequenceCounter = 1;
             foreach (var line in movesText)
             {
                 var turtle = turtleFactory.CreateTurtle();
@@ -108,18 +109,20 @@ namespace TurtleChallenge
                 switch (logic.Status)
                 {
                     case Status.StillInDanger:
-                        Console.WriteLine("Still in danger!");
+                        Console.WriteLine($"Sequence {sequenceCounter}: Still in danger!");
                         break;
                     case Status.OnAMine:
-                        Console.WriteLine("BOOM! The turtle exploded.");
+                        Console.WriteLine($"Sequence {sequenceCounter}: BOOM! The turtle exploded.");
                         break;
                     case Status.Exit:
-                        Console.WriteLine("The turtle found the exit and is safe!");
+                        Console.WriteLine($"Sequence {sequenceCounter}: The turtle found the exit and is safe!");
                         break;
                     case Status.OutOfBounds:
-                        Console.WriteLine("Uh oh, you took a wrong turn.");
+                        Console.WriteLine($"Sequence {sequenceCounter}: Uh oh, you took a wrong turn.");
                         break;
                 }
+
+                sequenceCounter++;
             }
 
             Console.WriteLine("Press any key to exit.");
