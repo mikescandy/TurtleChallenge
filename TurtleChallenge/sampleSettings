@@ -1,0 +1,15 @@
+﻿{
+	"board": {
+		"width": 4,
+		"height": 6,
+		"mines": [
+			{ "x": 2, "y": 0},
+			{ "x": 1, "y": 3},
+			{ "x": 2, "y": 4},
+			{ "x": 3, "y": 2}
+		]
+	},
+	"startTile": {"x": 0, "y": 3},
+	"exitTile": {"x": 3, "y": 1},
+	"direction": "North"
+}
